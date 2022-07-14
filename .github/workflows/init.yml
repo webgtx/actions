@@ -3,11 +3,12 @@ name: Inital Tests
 on: push
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Show System Inforamtion
-      uses: mochaaP/neofetch-action@master
-    - name: Checkout Repostitory Code
-      uses: actions/checkout@v3
-    - name: Tree Print
-      run: tree ${{ github.workspace }}
+  Tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show System Inforamtion
+        uses: mochaaP/neofetch-action@master
+      - name: Checkout Repostitory Code
+        uses: actions/checkout@v3
+      - name: Tree Print
+        run: tree ${{ github.workspace }}
