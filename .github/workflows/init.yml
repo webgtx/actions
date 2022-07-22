@@ -12,3 +12,11 @@ jobs:
         uses: actions/checkout@v3
       - name: Tree Print
         run: tree ${{ github.workspace }}
+    runs-on: self-hosted 
+    steps:
+      - name: Show System Inforamtion
+        uses: mochaaP/neofetch-action@master
+      - name: Checkout Repostitory Code
+        uses: actions/checkout@v3
+      - name: Tree Print
+        run: tree ${{ github.workspace }}
